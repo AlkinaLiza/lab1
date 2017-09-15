@@ -1,14 +1,6 @@
-const http = require('http');
-
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n');
-});
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+Для запуска программы необходимо:
+1) сохранить файл в формате *js
+2)запустить командную строку
+3)ввести "node" путь к файлу/название файла
+4)открыть в браузере "http://127.0.0.1:3000/"
+5)результат программы
