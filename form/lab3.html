@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+	</head>
+<body>
+
+ <div class="vladmaxi-top">
+   <div class="clr"></div>
+    </div>
+      <div id="login-form">
+        <h1>Введите текст</h1>
+
+        <fieldset>
+            <form name =aform action="javascript:void(0);" method="get">
+
+                <input type="text" required value="Текст" name="Mytext" onBlur="if(this.value=='')this.value='Текст'" onFocus="if(this.value=='Текст')this.value=''" >
+
+                <input  type="submit" value="ОТРЕДАКТИРОВАТЬ" name="test" onclick="output()" >
+
+                <script language="javascript" type="text/javascript">
+        function output()
+        {
+            var answer = document.createElement('div');
+            answer.innerHTML="<h2>"+ aform.Mytext.value.replace(/\s/g,"");
+             document.body.appendChild(answer);
+        }
+        </script>
+
+                <footer class="clearfix">
+                </footer>
+                            </form>
+        </fieldset>
+
+    </div>
+</body>
+</html>

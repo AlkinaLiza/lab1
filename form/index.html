@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+	</head>
+<body>
+
+ <div class="vladmaxi-top">
+   <div class="clr"></div>
+    </div>
+      <div id="login-form">
+        <h1>Введите свое имя</h1>
+
+        <fieldset>
+            <form name =aform action="javascript:void(0);" method="get">
+
+                <input type="text" required value="Имя" name="Myname" onBlur="if(this.value=='')this.value='Имя'" onFocus="if(this.value=='Имя')this.value=''" >
+
+                <input  type="submit" value="ПОПРИВЕТСТВОВАТЬ" name="test" onclick="output()" >
+
+                <script language="javascript" type="text/javascript">
+        function output()
+        {
+            //alert("Привет, "+ document.aform.Myname.value );
+            var answer = document.createElement('div');
+            answer.innerHTML = "<h2>Привет, "+aform.Myname.value;
+            document.body.appendChild(answer);
+        }
+        </script>
+
+                <footer class="clearfix">
+                </footer>
+                            </form>
+        </fieldset>
+
+    </div>
+</body>
+</html>
